@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<body>
+    <div class="container">
+        <nav>
+            <ul class="nav">
+                <li onclick="MinWidth(false)" class="back"> <i class="fa fa-angle-left"></i></li>
+                <li onclick="ChangePage(0)" class="active nav-item  " id="nav-0"> <i class="fa fa-house"></i></li>
+                <li onclick="ChangePage(1)" class="nav-item " id="nav-1"><i class="fa fa-bookmark"></i> </li>
+                <li onclick="ChangePage(2)" class="nav-item  " id="nav-2"> <i class="fa fa-grip"> </i></li>
+            </ul>
+        </nav>
+        <main>
+
+            <div class="Home">
+
+
+                <article class="gallery-container">
+                    <!-- gallery section -->
+                    <section class="gallery-list">
+                        <ul id="gallery-list">
+                        </ul>
+                    </section>
+                    <!-- hero image section -->
+                    <section class="selected-gallery">
+                        <img src="" alt="">
+                    </section>
+                    <!-- aside -->
+                    <section class="aside">
+                        <ul>
+                            <li> <button onclick="openFullscreen()" class="fa fa-expand"></button> </li>
+                            <li>
+                                <button class="fa fa-plus"></button>
+                                <button class="fa fa-minus"></button>
+                            </li>
+                            <li></li>
+                            <div class="text">
+
+                                <h1 class="ArtTitle">Abstract Art Work</h1>
+                                <p class="ArtDescription">abstract art description</p>
+                                <span class="ArtDate">09-13-25</span>
+
+                            </div>
+                        </ul>
+                    </section>
+                </article>
+                <article class="galley-footer">
+                    <ul>
+                        <li><span id="price">$ 174,000</span></li>
+                        <li>
+                            <button name=" "> <i class="fa fa-bookmark"></i></button>
+                            <button name=" "><i class="fa fa-arrow-right"></i></button>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+
+
+            <div class="SaveGallery">
+
+                <span> <i class="fa fa-bookmark"> Saved Gallery </i></span>
+
+            </div>
+
+            <div class="ListGallery">
+
+            </div>
+
+
+
+        </main>
+    </div>
+</body>
+
+<script src="assets/js/script.js">
+
+</script>
+
+</html>
